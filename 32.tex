@@ -1,0 +1,447 @@
+% "Станет проще"
+
+\documentclass[a4paper,12pt]{article} % тип документа
+
+% report, book
+
+%  Русский язык
+
+\usepackage[T2A]{fontenc}     % кодировка
+\usepackage[utf8]{inputenc}     % кодировка исходного текста
+\usepackage{graphicx}
+\usepackage[english,russian]{babel} % локализация и переносы
+
+
+%отступ
+\usepackage[left=3cm,right=3cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+
+% Математика
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} 
+\usepackage{csvsimple}
+\usepackage{multirow}
+
+\usepackage{hyperref}
+\usepackage{wasysym}
+\usepackage{subcaption}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{rotating}
+\usepackage{textcomp}
+\usepackage{amsmath}
+%Заговолок
+%\graphicspath{ {images/} }
+
+
+\newcommand{\M}[1]{\mathrm{#1}}
+
+\begin{titlepage}
+\author{Соловьянов Михаил }
+\title{ФОРМУЛЫ}
+\date{\today}
+\end{titlepage}
+
+
+
+\begin{document} % начало документа
+
+
+%k_0a = k1_Bid_cleavage_by_casp8
+%k_0b = k2_Bid_cleavage_by_casp8
+%k_0c = k1_Bid_cleavage_by_casp8_2
+%k_0d = k2_Bid_cleavage_by_casp8_2
+%k_1a = k1_Bid cleavage_by_casp3
+%k_1b = k2_Bid cleavage_by_casp3
+%k_1c = k1_Bid cleavage_by_casp3_2
+%k_1d = k2_Bid cleavage_by_casp3_2
+%k_2a = k1_Bid_cleavage_by_casp8
+%k_2b = k2_Bid_cleavage_by_casp8
+
+
+
+
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bid]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(1)}}    {\M{[casp8]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(1)}}    {\M{[casp8.Bid]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(18)}}    {\M{[casp3]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(18)}}    {\M{[casp3.Bid]}} } )) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp8]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(1)}}    {\M{[casp8]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(1)}}    {\M{[casp8.Bid]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(2)}}    {\M{[casp8.Bid]}} } ) } \\  
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp8.Bid]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(1)}}    {\M{[casp8]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(1)}}    {\M{[casp8.Bid]}} } )) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(2)}}    {\M{[casp8.Bid]}} } ) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[tBid_{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(2)}}    {\M{[casp8.Bid]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(19)}}    {\M{[casp3.Bid]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(20)}}    {\M{[tBid_{Cyto}]}} } ) } 
+\end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Apaf1]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(3)}}    {\M{[cyc_{Cyto}]}}    {\M{[Apaf1]}}  -  {\M{k2}}_{\M{(3)}}    {\M{[cyc.Apaf1]}} } )) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[cyc_{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(3)}}    {\M{[cyc_{Cyto}]}}    {\M{[Apaf1]}}  -  {\M{k2}}_{\M{(3)}}    {\M{[cyc.Apaf1]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(23)}}    {\M{[Bax2]}}    {\M{[cyc_{Mito}]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(28)}}    {\M{[Bak2]}}    {\M{[cyc_{Mito}]}} } ) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[cyc_{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(3)}}    {\M{[cyc_{Cyto}]}}    {\M{[Apaf1]}}  -  {\M{k2}}_{\M{(3)}}    {\M{[cyc.Apaf1]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(23)}}    {\M{[Bax2]}}    {\M{[cyc_{Mito}]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(28)}}    {\M{[Bak2]}}    {\M{[cyc_{Mito}]}} } ) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[cyc_{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(3)}}    {\M{[cyc_{Cyto}]}}    {\M{[Apaf1]}}  -  {\M{k2}}_{\M{(3)}}    {\M{[cyc.Apaf1]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(23)}}    {\M{[Bax2]}}    {\M{[cyc_{Mito}]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(28)}}    {\M{[Bak2]}}    {\M{[cyc_{Mito}]}} } ) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[cyc.Apaf1]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(3)}}    {\M{[cyc_{Cyto}]}}    {\M{[Apaf1]}}  -  {\M{k2}}_{\M{(3)}}    {\M{[cyc.Apaf1]}} } )) } \\ 
+  \\ 
+   {  -  {7}    (( {{\M{k1}}_{\M{(4)}}    {\M{[cyc.Apaf1]}}^7  -  {\M{k2}}_{\M{(4)}}    {\M{[apop]}} } )) } \end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(4)}}    {\M{[cyc.Apaf1]}}^7  -  {\M{k2}}_{\M{(4)}}    {\M{[apop]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(5)}}    {\M{[apop]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(5)}}    {\M{[apop.pro9]}} } )) } \\ 
+  \\ 
+   {  +  (( {{\M{k1}}_{\M{(9)}}    {\M{[apop.casp9]}}  -  {\M{k2}}_{\M{(9)}}    {\M{[apop]}}    {\M{[casp9]}} } )) } \end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.pro9]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(5)}}    {\M{[apop]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(5)}}    {\M{[apop.pro9]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(6)}}    {\M{[apop.pro9]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(6)}}    {\M{[apop.(pro9)2]}} } )) } \end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[pro9]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(5)}}    {\M{[apop]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(5)}}    {\M{[apop.pro9]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(6)}}    {\M{[apop.pro9]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(6)}}    {\M{[apop.(pro9)2]}} } )) } \end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.(pro9)2]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(6)}}    {\M{[apop.pro9]}}    {\M{[pro9]}}  -  {\M{k2}}_{\M{(6)}}    {\M{[apop.(pro9)2]}} } )) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(7)}}    {\M{[apop.(pro9)2]}} } ) } \end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.(casp9)2]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(14)}}    {\M{[apop.(casp9)2]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(14)}}    {\M{[apop.(casp9)2.IAP]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(16)}}    {\M{[apop.(casp9)2]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(16)}}    {\M{[apop.(casp9)2.pro3]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(17)}}    {\M{[apop.(casp9)2.pro3]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(7)}}    {\M{[apop.(pro9)2]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(8)}}    {\M{[apop.(casp9)2]}}  -  {\M{k2}}_{\M{(8)}}    {\M{[apop.casp9]}}    {\M{[casp9]}} } )) } \end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.(casp9)2]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(14)}}    {\M{[apop.(casp9)2]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(14)}}    {\M{[apop.(casp9)2.IAP]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(16)}}    {\M{[apop.(casp9)2]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(16)}}    {\M{[apop.(casp9)2.pro3]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(17)}}    {\M{[apop.(casp9)2.pro3]}} } ) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(7)}}    {\M{[apop.(pro9)2]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(8)}}    {\M{[apop.(casp9)2]}}  -  {\M{k2}}_{\M{(8)}}    {\M{[apop.casp9]}}    {\M{[casp9]}} } )) } \end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp9]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(11)}}    {\M{[casp9.pro3]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(12)}}    {\M{[casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(12)}}    {\M{[casp9.IAP]}} } )) } \\ 
+  \\ 
+   {  +  (( {{\M{k1}}_{\M{(8)}}    {\M{[apop.(casp9)2]}}  -  {\M{k2}}_{\M{(8)}}    {\M{[apop.casp9]}}    {\M{[casp9]}} } )) } \\ 
+  \\ 
+   {  +  (( {{\M{k1}}_{\M{(9)}}    {\M{[apop.casp9]}}  -  {\M{k2}}_{\M{(9)}}    {\M{[apop]}}    {\M{[casp9]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(10)}}    {\M{[casp9]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(10)}}    {\M{[casp9.pro3]}} } )) } \end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.casp9]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(13)}}    {\M{[apop.casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(13)}}    {\M{[apop.casp9.IAP]}} } )) } \\ 
+  \\ 
+   {  +  (( {{\M{k1}}_{\M{(8)}}    {\M{[apop.(casp9)2]}}  -  {\M{k2}}_{\M{(8)}}    {\M{[apop.casp9]}}    {\M{[casp9]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(9)}}    {\M{[apop.casp9]}}  -  {\M{k2}}_{\M{(9)}}    {\M{[apop]}}    {\M{[casp9]}} } )) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp9.pro3]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(11)}}    {\M{[casp9.pro3]}} } ) } \\ 
+  \\ 
+   {  +  (( {{\M{k1}}_{\M{(10)}}    {\M{[casp9]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(10)}}    {\M{[casp9.pro3]}} } )) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[pro3]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(16)}}    {\M{[apop.(casp9)2]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(16)}}    {\M{[apop.(casp9)2.pro3]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(10)}}    {\M{[casp9]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(10)}}    {\M{[casp9.pro3]}} } )) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp3]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(11)}}    {\M{[casp9.pro3]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(15)}}    {\M{[casp3]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(15)}}    {\M{[casp3.IAP]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(17)}}    {\M{[apop.(casp9)2.pro3]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(18)}}    {\M{[casp3]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(18)}}    {\M{[casp3.Bid]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(19)}}    {\M{[casp3.Bid]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(29)}}    {\M{[casp3]}}    {\M{[Bcl-xL{Cyto}]}}  -  {\M{k2}}_{\M{(29)}}    {\M{[casp3.Bcl-xL]}} } )) } \\ 
+  \\ 
+   {  +  ( {{\M{k1}}_{\M{(30)}}    {\M{[casp3.Bcl-xL]}} } ) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[IAP]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  -  (( {{\M{k1}}_{\M{(12)}}    {\M{[casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(12)}}    {\M{[casp9.IAP]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(13)}}    {\M{[apop.casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(13)}}    {\M{[apop.casp9.IAP]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(14)}}    {\M{[apop.(casp9)2]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(14)}}    {\M{[apop.(casp9)2.IAP]}} } )) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(15)}}    {\M{[casp3]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(15)}}    {\M{[casp3.IAP]}} } )) }
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp9.IAP]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(12)}}    {\M{[casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(12)}}    {\M{[casp9.IAP]}} } )) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.casp9.IAP]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(13)}}    {\M{[apop.casp9]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(13)}}    {\M{[apop.casp9.IAP]}} } )) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.(casp9)2.IAP]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(14)}}    {\M{[apop.(casp9)2]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(14)}}    {\M{[apop.(casp9)2.IAP]}} } )) }
+\end{split}
+\end{equation}
+
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp3.Bid]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(18)}}    {\M{[casp3]}}    {\M{[Bid]}}  -  {\M{k2}}_{\M{(18)}}    {\M{[casp3.Bid]}} } )) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(19)}}    {\M{[casp3.Bid]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[apop.(casp9)2.pro3]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(16)}}    {\M{[apop.(casp9)2]}}    {\M{[pro3]}}  -  {\M{k2}}_{\M{(16)}}    {\M{[apop.(casp9)2.pro3]}} } )) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(17)}}    {\M{[apop.(casp9)2.pro3]}} } ) }
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp3.IAP]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(15)}}    {\M{[casp3]}}    {\M{[IAP]}}  -  {\M{k2}}_{\M{(15)}}    {\M{[casp3.IAP]}} } )) }
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[tBid_{Mito}]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(20)}}    {\M{[tBid_{Cyto}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(21)}}    {\M{[tBid_{Mito}]}}    {\M{[Bax_{Mito}]}} } ) } 
+   {  +  ( {{\M{k1}}_{\M{(22)}}    {\M{[tBid.Bax]}}    {\M{[Bax_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(25)}}    {\M{[Bak]}}    {\M{[tBid_{Mito}]}} } ) }
+   {  +  ( {{\M{k1}}_{\M{(26)}}    {\M{[tBid.Bak]}}    {\M{[Bak]}} } ) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bax_{Mito}]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(21)}}    {\M{[tBid_{Mito}]}}    {\M{[Bax_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(22)}}    {\M{[tBid.Bax]}}    {\M{[Bax_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(24)}}    {\M{[Bax_{Mito}]}}    {\M{[Bcl-xL{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[tBid.Bax]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(21)}}    {\M{[tBid_{Mito}]}}    {\M{[Bax_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(22)}}    {\M{[tBid.Bax]}}    {\M{[Bax_{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[cyc_{Mito}]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(23)}}    {\M{[Bax2]}}    {\M{[cyc_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(28)}}    {\M{[Bak2]}}    {\M{[cyc_{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bax.Bcl-xL]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(24)}}    {\M{[Bax_{Mito}]}}    {\M{[Bcl-xL{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(27)}}    {\M{[Bax.Bcl-xL]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bcl-xL{Mito}]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(24)}}    {\M{[Bax_{Mito}]}}    {\M{[Bcl-xL{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bak]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(25)}}    {\M{[Bak]}}    {\M{[tBid_{Mito}]}} } ) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(26)}}    {\M{[tBid.Bak]}}    {\M{[Bak]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bak.tBid]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(25)}}    {\M{[Bak]}}    {\M{[tBid_{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[tBid.Bak]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  -  ( {{\M{k1}}_{\M{(26)}}    {\M{[tBid.Bak]}}    {\M{[Bak]}} } ) } 
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bax{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(27)}}    {\M{[Bax.Bcl-xL]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bcl-xL{Cyto}]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(27)}}    {\M{[Bax.Bcl-xL]}} } ) } \\ 
+  \\ 
+   {  -  (( {{\M{k1}}_{\M{(29)}}    {\M{[casp3]}}    {\M{[Bcl-xL{Cyto}]}}  -  {\M{k2}}_{\M{(29)}}    {\M{[casp3.Bcl-xL]}} } )) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bax2]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(22)}}    {\M{[tBid.Bax]}}    {\M{[Bax_{Mito}]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bak2]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(26)}}    {\M{[tBid.Bak]}}    {\M{[Bak]}} } ) }
+\end{split}
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[casp3.Bcl-xL]}}    {V}_{\M{Mito}} } ) }  {\M{d}{t} }  =  {  +  (( {{\M{k1}}_{\M{(29)}}    {\M{[casp3]}}    {\M{[Bcl-xL{Cyto}]}}  -  {\M{k2}}_{\M{(29)}}    {\M{[casp3.Bcl-xL]}} } )) } \\ 
+  \\ 
+   {  -  ( {{\M{k1}}_{\M{(30)}}    {\M{[casp3.Bcl-xL]}} } ) } 
+\end{split}
+\end{equation}
+
+
+\begin{equation}
+\begin{split}
+\frac {\M{d}( {{\M{[Bcl-xL.Inactive]}}    {V}_{\M{Cyto}} } ) }  {\M{d}{t} }  =  {  +  ( {{\M{k1}}_{\M{(30)}}    {\M{[casp3.Bcl-xL]}} } ) } 
+\end{split}
+\end{equation}
+
+
+
+\end{document}
